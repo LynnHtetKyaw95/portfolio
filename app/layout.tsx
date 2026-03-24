@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: `${developerInfo.name} - ${developerInfo.title}`,
+  title: `${developerInfo.fullName} - ${developerInfo.title}`,
   description: developerInfo.tagline,
 };
 

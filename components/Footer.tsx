@@ -40,7 +40,7 @@ export default function Footer() {
 
           <div className="text-center">
             <p className="text-text-primary font-medium">
-              {developerInfo.name}
+              {developerInfo.fullName}
             </p>
             <p className="text-sm text-text-muted">
               © 2025 - {currentYear} All rights reserved

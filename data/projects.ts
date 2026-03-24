@@ -28,33 +28,33 @@ export const projects: Project[] = [
   //   challenges:
   //     "Implementing real-time availability checking and handling concurrent booking requests while maintaining data consistency.",
   // },
-  {
-    slug: "kanji-kensaku",
-    title: "Kanji Kensaku",
-    description:
-      "A web application that allows users to search and explore Japanese kanji characters and learning information.",
-    fullDescription:
-      "A web application that allows users to search and explore Japanese kanji characters and learning information.",
-    stack: ["React", "TypeScript", "Tailwind CSS"],
-    image: "/projects/kanji_kensaku.png",
-    liveDemo: "https://kanji-kensaku.vercel.app",
-    github: "https://github.com/LynnHtetKyaw95/KanjiKensaku",
-    overview:
-      "Kanji Kensaku is a comprehensive tool for learning Japanese kanji characters. Users can search for kanji by meaning, reading, or stroke count, and access detailed information including on-yomi and kun-yomi readings, meanings, and example words.",
-    problem:
-      "Learning kanji can be challenging for Japanese language learners. Existing dictionaries are often cluttered with ads or lack user-friendly search features.",
-    solution:
-      "Built a clean, minimalist interface with powerful search capabilities and detailed kanji information display.",
-    features: [
-      "Search kanji by meaning, reading, or stroke count",
-      "Detailed kanji information with multiple readings",
-      "Example words and vocabulary for each kanji",
-      "Favorites system for saving learned kanji",
-      "Responsive design for mobile and desktop",
-    ],
-    challenges:
-      "Implementing efficient search algorithms and handling the large dataset of kanji characters while maintaining fast load times.",
-  },
+  // {
+  //   slug: "kanji-kensaku",
+  //   title: "Kanji Kensaku",
+  //   description:
+  //     "A web application that allows users to search and explore Japanese kanji characters and learning information.",
+  //   fullDescription:
+  //     "A web application that allows users to search and explore Japanese kanji characters and learning information.",
+  //   stack: ["React", "TypeScript", "Tailwind CSS"],
+  //   image: "/projects/kanji_kensaku.png",
+  //   liveDemo: "https://kanji-kensaku.vercel.app",
+  //   github: "https://github.com/LynnHtetKyaw95/KanjiKensaku",
+  //   overview:
+  //     "Kanji Kensaku is a comprehensive tool for learning Japanese kanji characters. Users can search for kanji by meaning, reading, or stroke count, and access detailed information including on-yomi and kun-yomi readings, meanings, and example words.",
+  //   problem:
+  //     "Learning kanji can be challenging for Japanese language learners. Existing dictionaries are often cluttered with ads or lack user-friendly search features.",
+  //   solution:
+  //     "Built a clean, minimalist interface with powerful search capabilities and detailed kanji information display.",
+  //   features: [
+  //     "Search kanji by meaning, reading, or stroke count",
+  //     "Detailed kanji information with multiple readings",
+  //     "Example words and vocabulary for each kanji",
+  //     "Favorites system for saving learned kanji",
+  //     "Responsive design for mobile and desktop",
+  //   ],
+  //   challenges:
+  //     "Implementing efficient search algorithms and handling the large dataset of kanji characters while maintaining fast load times.",
+  // },
   {
     slug: "myanmar-car-checker",
     title: "Myanmar Car Use Checker",
