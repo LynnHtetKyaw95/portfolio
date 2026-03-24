@@ -1,33 +1,34 @@
 import { Project } from "@/types";
 
 export const projects: Project[] = [
-  // {
-  //   slug: "hotel-reservation",
-  //   title: "Hotel Reservation System",
-  //   description:
-  //     "A booking platform where hotel employee can search hotels, check room availability, and make reservations.",
-  //   fullDescription:
-  //     "A booking platform where users can search hotels, check room availability, and make reservations.",
-  //   stack: ["Next.js", "Prisma", "PostgreSQL"],
-  //   image: "/projects/hotel-reservation.jpg",
-  //   github: "https://github.com/LynnHtetKyaw95/hotel-reservation",
-  //   overview:
-  //     "A full-featured hotel booking platform that allows users to search for hotels by location, check room availability, view photos and amenities, and complete reservations.",
-  //   problem:
-  //     "Traditional hotel booking systems are often complex and cluttered. Users need a simple, intuitive way to find and book hotels.",
-  //   solution:
-  //     "Built a modern, user-friendly interface with powerful search filters and a seamless booking flow.",
-  //   features: [
-  //     "Hotel search by location and dates",
-  //     "Filter by price, rating, amenities",
-  //     "Room availability calendar",
-  //     "User authentication and profiles",
-  //     "Booking management and history",
-  //     "Admin dashboard for hotel managers",
-  //   ],
-  //   challenges:
-  //     "Implementing real-time availability checking and handling concurrent booking requests while maintaining data consistency.",
-  // },
+  {
+    slug: "hotel-reservation",
+    title: "Hotel Reservation System (Admin Dashboard)",
+    description:
+      "A modern full-stack hotel management dashboard built with React and Supabase, designed for hotel staff to manage bookings, cabins, and daily operations efficiently.",
+    fullDescription:
+      "A booking platform where users can search hotels, check room availability, and make reservations.",
+    stack: ["React", "Supabase", "PostgreSQL", "styled-components"],
+    image: "/projects/shirin_admin.png",
+    liveDemo: "https://shirin-resort.vercel.app/",
+    github: "https://github.com/LynnHtetKyaw95/Shirin_Resort",
+    overview:
+      "This project simulates a real-world hotel admin system, focusing on usability, scalability, and clean architecture.",
+    problem:
+      "Traditional hotel booking systems are often complex and cluttered. Users need a simple, intuitive way to find and book hotels.",
+    solution:
+      "Built a modern, user-friendly interface with powerful search filters and a seamless booking flow.",
+    features: [
+      "Authentication & User Management",
+      "Cabin Management",
+      "Booking System",
+      "Check-in / Check-out Operations",
+      "Dashboard",
+      "Settings Management",
+    ],
+    challenges:
+      "Implementing real-time availability checking and handling concurrent booking requests while maintaining data consistency.",
+  },
   // {
   //   slug: "kanji-kensaku",
   //   title: "Kanji Kensaku",
