@@ -1,6 +1,33 @@
 import { Project } from "@/types";
 
 export const projects: Project[] = [
+  // {
+  //   slug: "hotel-reservation",
+  //   title: "Hotel Reservation System",
+  //   description:
+  //     "A booking platform where hotel employee can search hotels, check room availability, and make reservations.",
+  //   fullDescription:
+  //     "A booking platform where users can search hotels, check room availability, and make reservations.",
+  //   stack: ["Next.js", "Prisma", "PostgreSQL"],
+  //   image: "/projects/hotel-reservation.jpg",
+  //   github: "https://github.com/LynnHtetKyaw95/hotel-reservation",
+  //   overview:
+  //     "A full-featured hotel booking platform that allows users to search for hotels by location, check room availability, view photos and amenities, and complete reservations.",
+  //   problem:
+  //     "Traditional hotel booking systems are often complex and cluttered. Users need a simple, intuitive way to find and book hotels.",
+  //   solution:
+  //     "Built a modern, user-friendly interface with powerful search filters and a seamless booking flow.",
+  //   features: [
+  //     "Hotel search by location and dates",
+  //     "Filter by price, rating, amenities",
+  //     "Room availability calendar",
+  //     "User authentication and profiles",
+  //     "Booking management and history",
+  //     "Admin dashboard for hotel managers",
+  //   ],
+  //   challenges:
+  //     "Implementing real-time availability checking and handling concurrent booking requests while maintaining data consistency.",
+  // },
   {
     slug: "kanji-kensaku",
     title: "Kanji Kensaku",
@@ -8,10 +35,10 @@ export const projects: Project[] = [
       "A web application that allows users to search and explore Japanese kanji characters and learning information.",
     fullDescription:
       "A web application that allows users to search and explore Japanese kanji characters and learning information.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    stack: ["React", "TypeScript", "Tailwind CSS"],
     image: "/projects/kanji_kensaku.png",
     liveDemo: "https://kanji-kensaku.vercel.app",
-    github: "https://github.com/LynnHtetKyaw95/kanji-kensaku",
+    github: "https://github.com/LynnHtetKyaw95/KanjiKensaku",
     overview:
       "Kanji Kensaku is a comprehensive tool for learning Japanese kanji characters. Users can search for kanji by meaning, reading, or stroke count, and access detailed information including on-yomi and kun-yomi readings, meanings, and example words.",
     problem:
@@ -36,7 +63,7 @@ export const projects: Project[] = [
     fullDescription:
       "A tool that helps drivers check whether their vehicle can be used on a specific date based on Myanmar's even/odd license plate system.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image: "/projects/myanmar-car-checker.jpg",
+    image: "/projects/myanmar_car_use.png",
     liveDemo: "https://myanmar-cars-use.vercel.app",
     github: "https://github.com/LynnHtetKyaw95/myanmar-car-use",
     overview:
@@ -54,33 +81,6 @@ export const projects: Project[] = [
     ],
     challenges:
       "Handling the date logic correctly accounting for Myanmar's specific holidays and ensuring the application works offline.",
-  },
-  {
-    slug: "hotel-reservation",
-    title: "Hotel Reservation System",
-    description:
-      "A booking platform where users can search hotels, check room availability, and make reservations.",
-    fullDescription:
-      "A booking platform where users can search hotels, check room availability, and make reservations.",
-    stack: ["Next.js", "Prisma", "PostgreSQL"],
-    image: "/projects/hotel-reservation.jpg",
-    github: "https://github.com/LynnHtetKyaw95/hotel-reservation",
-    overview:
-      "A full-featured hotel booking platform that allows users to search for hotels by location, check room availability, view photos and amenities, and complete reservations.",
-    problem:
-      "Traditional hotel booking systems are often complex and cluttered. Users need a simple, intuitive way to find and book hotels.",
-    solution:
-      "Built a modern, user-friendly interface with powerful search filters and a seamless booking flow.",
-    features: [
-      "Hotel search by location and dates",
-      "Filter by price, rating, amenities",
-      "Room availability calendar",
-      "User authentication and profiles",
-      "Booking management and history",
-      "Admin dashboard for hotel managers",
-    ],
-    challenges:
-      "Implementing real-time availability checking and handling concurrent booking requests while maintaining data consistency.",
   },
 ];
 

@@ -22,19 +22,23 @@ I'm a self-taught **Front-end Developer** passionate about building modern web a
 ## 🛠 Tech Stack
 
 ### Frontend
+
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css)
 
 ### Backend
+
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat&logo=prisma)
 
 ### Database
+
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql)
 
 ### Tools
+
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel)
@@ -44,16 +48,18 @@ I'm a self-taught **Front-end Developer** passionate about building modern web a
 ## 📂 Featured Projects
 
 ### 1️⃣ Kanji Kensaku
+
 > A web application for searching and exploring Japanese kanji characters
 
-- **Tech Stack:** Next.js, TypeScript, Tailwind CSS
+- **Tech Stack:** React, TypeScript, Tailwind CSS, Prisma
 - **Features:** Search by meaning/reading/stroke count, detailed kanji info, favorites system
 - **Live Demo:** [kanji-kensaku.vercel.app](https://kanji-kensaku.vercel.app)
-- **GitHub:** [LynnHtetKyaw95/kanji-kensaku](https://github.com/LynnHtetKyaw95/kanji-kensaku)
+- **GitHub:** [LynnHtetKyaw95/kanji-kensaku](https://github.com/LynnHtetKyaw95/KanjiKensaku)
 
 ---
 
 ### 2️⃣ Myanmar Car Use Checker
+
 > A tool helping drivers check vehicle usage based on Myanmar's even/odd plate system
 
 - **Tech Stack:** Next.js, TypeScript, Tailwind CSS
@@ -64,6 +70,7 @@ I'm a self-taught **Front-end Developer** passionate about building modern web a
 ---
 
 ### 3️⃣ Hotel Reservation System
+
 > A booking platform for searching hotels and making reservations
 
 - **Tech Stack:** Next.js, Prisma, PostgreSQL
@@ -82,12 +89,12 @@ I'm a self-taught **Front-end Developer** passionate about building modern web a
 
 ## 📊 Skills
 
-| Category | Technologies |
-|----------|-------------|
+| Category     | Technologies                             |
+| ------------ | ---------------------------------------- |
 | **Frontend** | React, Next.js, TypeScript, Tailwind CSS |
-| **Backend** | Node.js, Prisma, REST APIs |
-| **Database** | PostgreSQL |
-| **Tools** | Git, GitHub, Vercel |
+| **Backend**  | Prisma, REST APIs                        |
+| **Database** | PostgreSQL                               |
+| **Tools**    | Git, GitHub, Vercel                      |
 
 ---
 

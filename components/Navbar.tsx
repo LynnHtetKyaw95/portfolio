@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Menu, X, Github } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
-import { developerInfo } from '@/data/developer';
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, X, Github } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
+import { developerInfo } from "@/data/developer";
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/#projects', label: 'Projects' },
-  { href: '/#about', label: 'About' },
-  { href: '/#contact', label: 'Contact' },
+  { href: "/", label: "Home" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -19,21 +19,21 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const isActive = (href: string) => {
-    if (href === '/') {
-      return pathname === '/';
+    if (href === "/") {
+      return pathname === "/";
     }
     return pathname === href;
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-surface/80 dark:bg-slate-950/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-surface/80  backdrop-blur-lg border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="text-xl font-bold text-text-primary hover:text-accent transition-colors"
           >
-            {developerInfo.name}
+            {developerInfo.fullName}
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -43,8 +43,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
                   isActive(link.href)
-                    ? 'text-accent'
-                    : 'text-text-muted hover:text-accent'
+                    ? "text-accent"
+                    : "text-text-muted hover:text-accent"
                 }`}
               >
                 {link.label}
@@ -88,9 +88,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className={`block py-2 text-base font-medium transition-colors ${
-                  isActive(link.href)
-                    ? 'text-accent'
-                    : 'text-text-muted'
+                  isActive(link.href) ? "text-accent" : "text-text-muted"
                 }`}
               >
                 {link.label}
