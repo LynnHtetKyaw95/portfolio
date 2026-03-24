@@ -9,7 +9,7 @@ export const projects: Project[] = [
     fullDescription:
       "A booking platform where users can search hotels, check room availability, and make reservations.",
     stack: ["React", "Supabase", "PostgreSQL", "styled-components"],
-    image: "/projects/shirin_admin.png",
+    image: "/projects/shirin_admindashboard.png",
     liveDemo: "https://shirin-resort.vercel.app/",
     github: "https://github.com/LynnHtetKyaw95/Shirin_Resort",
     overview:
