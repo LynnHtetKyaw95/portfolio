@@ -1,9 +1,5 @@
 # 👋 Hi, I'm Lynn Htet Kyaw
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=LynnHtetKyaw95&label=Profile%20Views&color=2563eb&style=flat" alt="profile views" />
-  <img src="https://img.shields.io/github/followers/LynnHtetKyaw95?style=flat&color=2563eb&label=Followers" alt="followers" />
-</p>
 
 ---
 
