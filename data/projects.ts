@@ -7,8 +7,16 @@ export const projects: Project[] = [
     description:
       "A modern full-stack hotel management dashboard built with React and Supabase, designed for hotel staff to manage bookings, cabins, and daily operations efficiently.",
     fullDescription:
-      "A booking platform where users can search hotels, check room availability, and make reservations.",
-    stack: ["React", "Supabase", "PostgreSQL", "styled-components"],
+      "A modern full-stack hotel management dashboard built with React and Supabase, designed for hotel staff to manage bookings, cabins, and daily operations efficiently.",
+    stack: [
+      "React",
+      "React Router",
+      "React Query",
+      "React Hook Form",
+      "Supabase",
+      "PostgreSQL",
+      "styled-components",
+    ],
     image: "/projects/shirin_admindashboard.png",
     liveDemo: "https://shirin-resort.vercel.app/",
     github: "https://github.com/LynnHtetKyaw95/Shirin_Resort",
@@ -24,6 +32,7 @@ export const projects: Project[] = [
       "Booking System",
       "Check-in / Check-out Operations",
       "Dashboard",
+      "Guests Management",
       "Settings Management",
     ],
     challenges:
@@ -56,33 +65,33 @@ export const projects: Project[] = [
   //   challenges:
   //     "Implementing efficient search algorithms and handling the large dataset of kanji characters while maintaining fast load times.",
   // },
-  {
-    slug: "myanmar-car-checker",
-    title: "Myanmar Car Use Checker",
-    description:
-      "A tool that helps drivers check whether their vehicle can be used on a specific date based on Myanmar's even/odd license plate system.",
-    fullDescription:
-      "A tool that helps drivers check whether their vehicle can be used on a specific date based on Myanmar's even/odd license plate system.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image: "/projects/myanmar_car_use.png",
-    liveDemo: "https://myanmar-cars-use.vercel.app",
-    github: "https://github.com/LynnHtetKyaw95/myanmar-car-use",
-    overview:
-      "A practical utility application that helps Myanmar drivers navigate the country's vehicle restriction system. Users enter their license plate number and date to quickly check if their vehicle is allowed on the road.",
-    problem:
-      "Myanmar implements an even/odd license plate system to reduce traffic congestion. Many drivers find it confusing to remember which days their vehicles are restricted.",
-    solution:
-      "Created an intuitive interface where users simply enter their plate number and the date to instantly see if they can drive.",
-    features: [
-      "Quick plate number input with validation",
-      "Calendar date picker for checking restrictions",
-      "Clear visual indication of allowed/blocked days",
-      "History of recent checks",
-      "Offline support for quick access",
-    ],
-    challenges:
-      "Handling the date logic correctly accounting for Myanmar's specific holidays and ensuring the application works offline.",
-  },
+  // {
+  //   slug: "myanmar-car-checker",
+  //   title: "Myanmar Car Use Checker",
+  //   description:
+  //     "A tool that helps drivers check whether their vehicle can be used on a specific date based on Myanmar's even/odd license plate system.",
+  //   fullDescription:
+  //     "A tool that helps drivers check whether their vehicle can be used on a specific date based on Myanmar's even/odd license plate system.",
+  //   stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+  //   image: "/projects/myanmar_car_use.png",
+  //   liveDemo: "https://myanmar-cars-use.vercel.app",
+  //   github: "https://github.com/LynnHtetKyaw95/myanmar-car-use",
+  //   overview:
+  //     "A practical utility application that helps Myanmar drivers navigate the country's vehicle restriction system. Users enter their license plate number and date to quickly check if their vehicle is allowed on the road.",
+  //   problem:
+  //     "Myanmar implements an even/odd license plate system to reduce traffic congestion. Many drivers find it confusing to remember which days their vehicles are restricted.",
+  //   solution:
+  //     "Created an intuitive interface where users simply enter their plate number and the date to instantly see if they can drive.",
+  //   features: [
+  //     "Quick plate number input with validation",
+  //     "Calendar date picker for checking restrictions",
+  //     "Clear visual indication of allowed/blocked days",
+  //     "History of recent checks",
+  //     "Offline support for quick access",
+  //   ],
+  //   challenges:
+  //     "Handling the date logic correctly accounting for Myanmar's specific holidays and ensuring the application works offline.",
+  // },
 ];
 
 export const getProjectBySlug = (slug: string): Project | undefined => {

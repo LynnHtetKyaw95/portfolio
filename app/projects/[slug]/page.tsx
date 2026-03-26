@@ -1,7 +1,13 @@
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, ExternalLink, Github, CheckCircle, XCircle } from 'lucide-react';
-import { projects, getProjectBySlug } from '@/data/projects';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import {
+  ArrowLeft,
+  ExternalLink,
+  Github,
+  CheckCircle,
+  XCircle,
+} from "lucide-react";
+import { projects, getProjectBySlug } from "@/data/projects";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -9,21 +15,29 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
-  
+
   if (!project) {
-    return { title: 'Project Not Found' };
+    return { title: "Project Not Found" };
   }
-  
+
   return {
     title: `${project.title} - Project Details`,
     description: project.description,
   };
 }
 
-export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ProjectDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
@@ -36,17 +50,17 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           href="/#projects"
-          className="inline-flex items-center gap-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-accent hover:text-accent-hover transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Projects
         </Link>
 
         <div className="mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold text-text-primary mb-4">
             {project.title}
           </h1>
-          <p className="text-lg text-zinc-600 dark:text-zinc-400">
+          <p className="text-lg text-text-secondary">
             {project.fullDescription}
           </p>
         </div>
@@ -54,21 +68,20 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div className="flex flex-wrap gap-3 mb-12">
           {project.stack.map((tech) => (
             <span
-              key={tech}
-              className="px-4 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              className="px-4 py-1.5 rounded-full bg-surface text-sm font-medium text-text-secondary"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="h-64 sm:h-80 rounded-2xl bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-700 flex items-center justify-center mb-12">
+        {/* <div className="h-64 sm:h-80 rounded-2xl bg-linear-to-br from-zinc-100 to-zinc-200 dark:from-zinc-800 dark:to-zinc-700 flex items-center justify-center mb-12">
           <div className="w-24 h-24 rounded-2xl bg-white dark:bg-zinc-900 flex items-center justify-center shadow-lg">
             <span className="text-4xl">📱</span>
           </div>
-        </div>
+        </div> */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
           {project.liveDemo && (
             <a
               href={project.liveDemo}
@@ -91,55 +104,57 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               View Source
             </a>
           )}
-        </div>
+        </div> */}
 
         <div className="space-y-12">
           <section>
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">
               Overview
             </h2>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               {project.overview}
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">
               Problem
             </h2>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               {project.problem}
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">
               Solution
             </h2>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               {project.solution}
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">
               Key Features
             </h2>
             <ul className="space-y-3">
               {project.features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-zinc-600 dark:text-zinc-400">{feature}</span>
+                  <span className="text-text-secondary">
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-semibold text-text-primary mb-4">
               Challenges & Learnings
             </h2>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               {project.challenges}
             </p>
           </section>

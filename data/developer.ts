@@ -12,7 +12,7 @@ export const developerInfo = {
 export const techBadge = [
   "Next.js",
   "TypeScript",
-  "JavaScript",
+  "React",
   "TailWind CSS",
-  "Shadcn UI",
+  "Supabase",
 ];
