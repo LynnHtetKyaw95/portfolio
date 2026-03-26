@@ -15,4 +15,5 @@ export const techBadge = [
   "React",
   "TailWind CSS",
   "Supabase",
+  "Auth.js",
 ];

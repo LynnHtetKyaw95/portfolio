@@ -2,12 +2,12 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    slug: "hotel-reservation",
-    title: "Hotel Reservation System (Admin Dashboard)",
+    slug: "hotel-reservation-admin",
+    title: "Hotel Reservation System - Admin Dashboard",
     description:
-      "A modern full-stack hotel management dashboard built with React and Supabase, designed for hotel staff to manage bookings, cabins, and daily operations efficiently.",
+      "A full-stack hotel management dashboard built with React and Supabase, enabling staff to manage bookings, cabins, guests, and daily operations through a clean and efficient interface.",
     fullDescription:
-      "A modern full-stack hotel management dashboard built with React and Supabase, designed for hotel staff to manage bookings, cabins, and daily operations efficiently.",
+      "This project is a full-stack hotel management admin dashboard designed to simulate real-world internal hotel operations. It allows staff to manage reservations, monitor room availability, handle guest data, and oversee daily workflows. The application focuses on performance, scalability, and maintainable architecture, using modern React patterns and Supabase as the backend service.",
     stack: [
       "React",
       "React Router",
@@ -21,11 +21,11 @@ export const projects: Project[] = [
     liveDemo: "https://shirin-resort.vercel.app/",
     github: "https://github.com/LynnHtetKyaw95/Shirin_Resort",
     overview:
-      "This project simulates a real-world hotel admin system, focusing on usability, scalability, and clean architecture.",
+      "A production-style admin dashboard that replicates hotel staff workflows, focusing on data management, system reliability, and clean UI/UX.",
     problem:
-      "Traditional hotel booking systems are often complex and cluttered. Users need a simple, intuitive way to find and book hotels.",
+      "Many hotel management systems are overly complex, slow, and difficult for staff to use efficiently, especially when handling bookings, guest records, and daily operations.",
     solution:
-      "Built a modern, user-friendly interface with powerful search filters and a seamless booking flow.",
+      "Developed a streamlined admin dashboard with intuitive navigation, real-time data handling, and optimized state management to simplify hotel operations and improve staff productivity.",
     features: [
       "Authentication & User Management",
       "Cabin Management",
@@ -36,8 +36,36 @@ export const projects: Project[] = [
       "Settings Management",
     ],
     challenges:
-      "Implementing real-time availability checking and handling concurrent booking requests while maintaining data consistency.",
+      "Ensuring data consistency during concurrent booking operations and implementing efficient state synchronization between the frontend and Supabase backend.",
   },
+  // {
+  //   slug: "hotel-reservation-client",
+  //   title: "Hotel Reservation System - Customer Application",
+  //   description:
+  //     "A full-stack hotel booking application built with Next.js and Supabase, allowing users to explore cabins, create accounts, and manage reservations through a seamless and intuitive interface.",
+  //   fullDescription:
+  //     "This project is a full-stack customer-facing hotel reservation system designed to replicate a real-world booking experience. Users can browse available cabins, view detailed information, create an account, and manage their reservations in advance. The application emphasizes performance, responsive design, and smooth user experience using modern Next.js architecture and Supabase backend services.",
+  //   stack: ["Next.js", "Context API", "supabase", "tailwindcss", "Auth.js"],
+  //   image: "/projects/shirin_admindashboard.png",
+  //   liveDemo: "https://shirin-resort.vercel.app/",
+  //   github: "https://github.com/LynnHtetKyaw95/Shirin_Resort",
+  //   overview:
+  //     "A production-style hotel booking application focused on delivering a smooth user journey, from discovery to reservation management.",
+  //   problem:
+  //     "Many hotel booking platforms are cluttered and unintuitive, making it difficult for users to quickly find suitable rooms and manage their reservations efficiently.",
+  //   solution:
+  //     "Developed a clean, responsive booking interface with optimized navigation, clear cabin details, and a streamlined reservation flow to improve usability and user satisfaction.",
+  //   features: [
+  //     "Browse and explore hotel and cabin listings",
+  //     "Detailed cabin pages with availability information",
+  //     "User authentication and account management",
+  //     "Reservation booking and management",
+  //     "User profile and booking history",
+  //     "Responsive design for multiple devices",
+  //   ],
+  //   challenges:
+  //     "Handling real-time availability updates and ensuring synchronization between frontend state and Supabase backend during booking operations.",
+  // },
   // {
   //   slug: "kanji-kensaku",
   //   title: "Kanji Kensaku",

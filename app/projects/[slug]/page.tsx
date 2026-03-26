@@ -1,12 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import {
-  ArrowLeft,
-  ExternalLink,
-  Github,
-  CheckCircle,
-  XCircle,
-} from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import { projects, getProjectBySlug } from "@/data/projects";
 
 export async function generateStaticParams() {
@@ -68,6 +62,7 @@ export default async function ProjectDetailPage({
         <div className="flex flex-wrap gap-3 mb-12">
           {project.stack.map((tech) => (
             <span
+              key={tech}
               className="px-4 py-1.5 rounded-full bg-surface text-sm font-medium text-text-secondary"
             >
               {tech}
@@ -141,10 +136,8 @@ export default async function ProjectDetailPage({
             <ul className="space-y-3">
               {project.features.map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                  <span className="text-text-secondary">
-                    {feature}
-                  </span>
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
+                  <span className="text-text-secondary">{feature}</span>
                 </li>
               ))}
             </ul>

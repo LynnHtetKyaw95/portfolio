@@ -94,7 +94,7 @@ export default function Hero() {
           ref={badgeRef}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-sm text-accent mb-8"
         >
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+          <span className="w-2 h-2 rounded-full dark:bg-green-200 bg-green-700 animate-pulse" />
           Available for work
         </div>
 
