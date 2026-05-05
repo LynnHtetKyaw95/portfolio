@@ -9,7 +9,7 @@ export const skills: SkillCategory[] = [
   {
     title: "Backend",
     icon: "Server",
-    skills: ["Node.js", "Prisma", "REST APIs"],
+    skills: ["Node.js", "Prisma", "REST APIs", "Supabase", "Next Auth"],
   },
   {
     title: "Database",
@@ -24,7 +24,7 @@ export const skills: SkillCategory[] = [
 ];
 
 export const activities: Activity[] = [
-  { type: "building", text: "Hotel Reservation System (Customer Side)" },
+  { type: "building", text: "Nico Nico Nii E-commerce Website" },
   { type: "learning", text: "System Design" },
   { type: "interested", text: "Scalable Web Applications" },
 ];
